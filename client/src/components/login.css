@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300;400;700&display=swap');
+
+body, html {
+  font-family: 'Lora', serif;
+  background-color: #f5f0eb;
+  color: #5a4a42;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for headings */
+h1 {
+  font-weight: 700; /* Lora bold for headings */
+  margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+/* Common form styling */
+.form-outline {
+  background-color: #fdf6e3;
+  border-radius: 20px;
+  padding: 2rem; /* 20px padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  margin: 2rem; /* Margin around the form */
+}
+
+/* Input field styling */
+.form-control {
+  border: 2px solid #5a4a42;
+  border-radius: 4px;
+  padding: 0.5rem; /* 10px padding */
+  margin-bottom: 1rem; /* 15px margin bottom */
+  width: 100%; /* Full width of the parent */
+  font-size: 1rem; /* 16px font size */
+}
+
+/* Label styling */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* 5px margin bottom */
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #8a6453;
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem; /* Padding of 8px top/bottom and 16px left/right */
+  border: none;
+  width: 100%; /* Full width of the parent */
+  margin-top: 1rem; /* 10px margin top */
+  cursor: pointer; /* Hand cursor on hover */
+  font-size: 1rem; /* 16px font size */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #7d5849; /* Slightly darker on hover/focus */
+}
+
+/* Logo styling */
+.d-inline-block.align-top {
+  display: block; /* Block display for the logo */
+  margin: 2rem auto; /* 60px margin top and bottom, auto centers horizontally */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Max width for the logo */
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .form-outline {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem; /* Smaller padding on smaller screens */
+  }
+}

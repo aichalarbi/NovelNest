@@ -1,0 +1,157 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:ital@0;1&display=swap');
+
+/* Resetting margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  background-color: #f5f0eb;
+  color: #5a4b41;
+  font-family: 'Libre Baskerville', serif;
+}
+
+a {
+  color: #6d4c41;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c6644;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+  background-color: #f5f0eb;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand img {
+  height: auto;
+  width: 120px; /* Adjust width as needed */
+}
+
+.custom-navbar .custom-nav-link,
+.custom-navbar .custom-nav-dropdown {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-style: bold;
+  color: #5a4b41;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .custom-nav-link:hover,
+.custom-navbar .custom-nav-dropdown:hover {
+  color: #9c6644;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #ccc;
+}
+
+.custom-navbar .custom-search-input {
+  background-color: #efebe9;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+.custom-navbar .btn-outline-custom {
+  color: #6d4c41;
+  border-color: #6d4c41;
+}
+
+.custom-navbar .btn-outline-custom:hover {
+  background-color: #6d4c41;
+  color: #fff;
+}
+
+/* Book Card Styles */
+.card {
+  background-color: #fdfaf6;
+  border: 1px solid #eae0d5;
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #5a4b41;
+  margin-bottom: 0.5rem;
+}
+
+.card .btn-primary {
+  background-color: #9c6644;
+  border: none;
+  border-radius: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card .btn-primary:hover {
+  background-color: #7d4c41;
+}
+
+/* Book List Styles */
+.app {
+  padding: 2rem;
+  background-color: #f5f0eb;
+}
+
+.row {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust this to change spacing */
+}
+
+.col-md-4 {
+  width: 31%; /* Adjust the percentage to ensure symmetry */
+  margin-bottom: 2rem; /* Optional, for spacing between rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 48%; /* Adjust for better spacing on smaller screens */
+  }
+
+  .custom-navbar .custom-nav-link,
+  .custom-navbar .custom-nav-dropdown {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .custom-navbar .navbar-brand img {
+    width: 100px; /* Adjust logo size on very small screens */
+  }
+}

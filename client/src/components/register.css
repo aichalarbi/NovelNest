@@ -1,0 +1,73 @@
+/* register.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+  background-color: #f4ede4; /* A warm, light beige reminiscent of aged paper */
+  font-family: 'Merriweather', serif;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fdfaf6; /* Slightly off-white for the form background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.register-form h1 {
+  color: #5a4a42; /* Dark brown text for the heading */
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-outline {
+  margin-bottom: 24px;
+}
+
+.form-control {
+  border: 2px solid #d3c1b0; /* Borders matching the vintage theme */
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #fbf8f1; /* Lighter background for the inputs */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #5a4a42;
+  font-size: 18px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #8a6453; /* Warm brown background for buttons */
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #7a5343; /* A shade darker on hover */
+}
+
+.btn-primary.btn-sm {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.d-inline-block.align-top {
+  display: block; /* Makes the logo a block to allow for margin auto to work */
+  margin: 20px auto 40px; /* Centers the logo and adds spacing */
+  width: 300px; /* Adjust the logo size to be larger and clearer */
+  height: auto; /* Keeps the aspect ratio of the logo */
+}
+
+/* Adjust the logo size to your preference */
