@@ -4,30 +4,25 @@ import BookCard from "./bookcard";
 import NavBar from "./navbar";
 import BookDetails from "./details";
 import { Route, Routes } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getBooks, get_auth_user } from "../redux/actions";
 
 const BookList = () => {
-  const [books, setBooks] = useState([]);
-  const [filteredBooks, setFilteredBooks] = useState([]);
+  
+  
+  const dispatch = useDispatch()
+  const books = useSelector((state)=> state.books)
+  
+  const [filteredBooks, setFilteredBooks] = useState(books);
 
-  useEffect(() => {
-    axios
-      .get("/book/getAllBooks")
-      .then((response) => {
-        console.log(response.data.result);
-        if (response.data) {
-          setBooks(response.data.result);
-          setFilteredBooks(response.data.result);
-        } else {
-          console.error(
-            "Books array not found in response data:",
-            response.data
-          );
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching books:", error);
-      });
-  }, []);
+  useEffect(()=>{
+    setFilteredBooks(books)
+  }, [books])
+  
+
+  useEffect(()=> {
+    dispatch(getBooks())
+  }, [])
 
   const handleFilter = (title) => {
     const filtered = books.filter((book) =>
@@ -46,7 +41,8 @@ const BookList = () => {
         />
       </Routes>
       <div className="row row-cols-md-4">
-        {filteredBooks.map((book) => (
+        { books &&
+        filteredBooks.map((book) => (
           <div className="col mb-4" key={book._id}>
             <BookCard book={book} />
           </div>

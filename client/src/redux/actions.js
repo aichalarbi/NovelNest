@@ -39,7 +39,7 @@ export const logout = () => (dispatch) => {
 };
 export const fetchUserImage = (userId) => async (dispatch) => {
   try {
-    const response = await axios.get(`/uploads/images/${userId}`);
+    const response = await axios.get(`/api/uploads/images/${userId}`);
     const imageURL = response.data.imageURL;
     dispatch({ type: SET_USER_IMAGE, payload: imageURL });
   } catch (error) {

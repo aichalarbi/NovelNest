@@ -49,7 +49,7 @@ const SignInForm = () => {
     setUploading(true);
 
     try {
-      const response = await axios.post("/uploads", bodyFormData, {
+      const response = await axios.post("/api/uploads", bodyFormData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

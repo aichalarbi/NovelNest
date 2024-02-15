@@ -4,27 +4,27 @@ const schema = mongoose.Schema
 const userSchema = new schema({
     fullName: {
         type: String,
-        require: true
+        //require: true
     },
     image: {
         type: String,
-        require: true
+        //require: true
     },
     email: {
         type: String,
-        require: true
+        //require: true
     },
     password: {
         type:  String,
-        require: true
+        //require: true
     },
     age: {
         type: Number,
-        require: true
+        //require: true
     },
     favoriteGenre : {
         type:  String,
-        require: true
+        //require: true
     }
 
 

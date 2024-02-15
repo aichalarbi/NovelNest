@@ -24,6 +24,7 @@ const BookDetails = () => {
       <p>{book.description}</p>
       <img src={book.image} alt={book.title} />
       <Link to="/">Back to Home</Link>
+      
     </div>
   );
 };

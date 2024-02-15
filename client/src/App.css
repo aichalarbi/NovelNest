@@ -146,12 +146,12 @@ a:hover {
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .col-md-4 {
     width: 100%;
-  }
+  } */
 
   .custom-navbar .navbar-brand img {
     width: 100px; /* Adjust logo size on very small screens */
   }
-}
+

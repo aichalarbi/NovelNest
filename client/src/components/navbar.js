@@ -36,7 +36,7 @@ function NavBar({ handleFilter }) {
                         <Nav.Link href="#" className="custom-nav-link">My Books</Nav.Link>
                         <NavDropdown title="Browse" id="basic-nav-dropdown" className="custom-nav-dropdown">
                             <NavDropdown.Item href="#" className="custom-dropdown-item">Discussions</NavDropdown.Item>
-                            <NavDropdown.Item href="#" className="custom-dropdown-item">My Profile</NavDropdown.Item>
+                            <NavDropdown.Item href="/users/profile" className="custom-dropdown-item">My Profile</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/users/register" className="custom-dropdown-item">Sign Out</NavDropdown.Item>
                         </NavDropdown>
