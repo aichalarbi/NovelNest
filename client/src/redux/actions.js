@@ -1,6 +1,18 @@
 import { GET_BOOKS } from "./actiontypes";
 import axios from "axios";
-import { LOGIN, LOGOUT, REGISTER, GET_AUTH_USER,SET_USER_IMAGE } from "./actiontypes";
+import { LOGIN, LOGOUT, REGISTER, GET_AUTH_USER,SET_USER_IMAGE,ADD_TO_FAVORITES , REMOVE_FROM_FAVORITES} from "./actiontypes";
+
+
+
+export const addToFavorites = (bookId) => ({
+  type: ADD_TO_FAVORITES,
+  payload: bookId,
+});
+
+export const removeFromFavorites = (bookId) => ({
+  type: REMOVE_FROM_FAVORITES,
+  payload: bookId,
+});
 
 export const register = (newUser) => async (dispatch) => {
   try {

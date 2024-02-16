@@ -2,6 +2,8 @@ const express = require("express");
 const axios = require("axios");
 const router = express.Router();
 const book = require("../models/bookModel");
+// const User = require("../models/user");
+// const FavoriteBook = require("../models/favoriteBook");
 
 router.get("/api/sync-google-books", async (req, res) => {
     try {
@@ -49,7 +51,16 @@ router.post("/addBook", async (req, res) => {
         res.status(500).json({ message: "Internal server error", error });
     }
 });
-
+// router.get('/favorites', async (req, res) => {
+//     try {
+//       const userId = req.user.id;
+//       const favoriteBooks = await FavoriteBook.find({ userId });
+//       res.json({ favoriteBooks });
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json({ message: 'Internal server error' });
+//     }
+//   });
 router.get("/getAllBooks", async (req,res) => {
     try {
       const result = await book.find()
@@ -103,5 +114,6 @@ router.delete("/deleteBook/:id", async (req, res) => {
         res.status(500).json({ message: "Internal server error", error });
     }
 });
+
 
 module.exports = router;

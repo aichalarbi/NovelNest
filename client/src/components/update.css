@@ -1,0 +1,72 @@
+.container {
+    background-color: #f5f0eb;
+    padding: 2rem;
+  }
+  
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #6d4c41;
+    margin-bottom: 2rem;
+  }
+  
+  .form-label {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    color: #6d4c41;
+  }
+  
+  .form-control {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: #6d4c41;
+    background-color: #fdfaf6;
+    border-color: #eae0d5;
+    border-radius: 0;
+  }
+  
+  .btn-primary {
+    background-color: #9c6644;
+    border-color: #9c6644;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7d4c41;
+  }
+  
+  .list-group-item {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: #6d4c41;
+    background-color: #fdfaf6;
+    border-color: #eae0d5;
+  }
+  
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #6d4c41;
+    margin-top: 3rem;
+  }
+  
+  #favoriteBooksList {
+    margin-top: 1rem;
+  }
+  
+  #favoriteBooksList .list-group-item {
+    border: none;
+  }
+  
+  #favoriteBooksList .list-group-item::before {
+    content: '•';
+    margin-right: 0.5rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  

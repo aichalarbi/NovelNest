@@ -33,7 +33,7 @@ function NavBar({ handleFilter }) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/" className="custom-nav-link">Home</Nav.Link>
-                        <Nav.Link href="#" className="custom-nav-link">My Books</Nav.Link>
+                        <Nav.Link href="/book/favorites" className="custom-nav-link">My Books</Nav.Link>
                         <NavDropdown title="Browse" id="basic-nav-dropdown" className="custom-nav-dropdown">
                             <NavDropdown.Item href="#" className="custom-dropdown-item">Discussions</NavDropdown.Item>
                             <NavDropdown.Item href="/users/profile" className="custom-dropdown-item">My Profile</NavDropdown.Item>

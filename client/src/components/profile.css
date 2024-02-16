@@ -1,0 +1,143 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Apply Fonts */
+p {
+    font-family: 'Lora', serif; /* Elegant, readable serif font */
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fdf6e3; /* Warm beige, reminiscent of old paper */
+    color: #5a4a42; /* Deep brown for a vintage ink look */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Resetting margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+h2 {
+  
+  color: #5a4b41; /* Brownish color for text */
+ font-family: 'Libre Baskerville', serif;
+  font-size: 40px; /* Larger font size */
+ } 
+
+a {
+  color: #6d4c41;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c6644;
+}
+
+/* Profile Styles */
+.user-profile {
+  width: 100%;
+  height: 100vh; /* Fill the whole screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile__container {
+  width: 90%;
+  max-width: 800px; /* Limit width for better readability */
+}
+
+.user-profile__content {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 5px solid #6d4c41; /* Brownish border for avatar */
+}
+
+.user-profile__avatar-img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-profile__avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #6d4c41; /* Brownish background */
+}
+
+.user-profile__details {
+  font-size: 22px; /* Larger font size for details */
+}
+
+.user-profile__name {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 28px; /* Larger font size for name */
+  margin-bottom: 10px;
+}
+
+.user-profile__age,
+.user-profile__favorite-genre,
+.user-profile__email {
+  margin-bottom: 5px;
+}
+
+.user-profile__edit-button {
+    color: #5a4b41; /* Brownish color for text */
+    font-family: 'Libre Baskerville', serif;
+     font-size: 40px; /* Larger font size */
+  background-color: #6d4c41; /* Brownish color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-profile__edit-button:hover {
+  background-color: #9c6644; /* Lighter brownish color on hover */
+}
+
+.user-profile__social-links {
+  margin-top: 20px;
+}
+
+.user-profile__social-link {
+  color: #6d4c41; /* Brownish color for social icons */
+  margin-right: 10px;
+  font-size: 24px; /* Larger font size for social icons */
+}
+
+.user-profile__social-link:hover {
+  color: #9c6644; /* Lighter brownish color on hover */
+}
+.btn-edit-profile {
+    background-color: #9c6644;
+    border-color: #9c6644;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #7d4c41;
+    border-color: #7d4c41;
+    color: #fff;
+}
+
+.btn-edit-profile:hover {
+    background-color: #7d4c41;
+    border-color: #7d4c41;
+    color: #fff;
+}
+
